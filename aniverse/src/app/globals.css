@@ -8,17 +8,17 @@
     --card-foreground: 0 0% 95%;
     --popover: 0 0% 7%;
     --popover-foreground: 0 0% 95%;
-    --primary: 43 74% 49%;
+    --primary: 338 100% 71%;
     --primary-foreground: 0 0% 100%;
     --secondary: 0 0% 12%;
     --secondary-foreground: 0 0% 95%;
     --muted: 0 0% 12%;
     --muted-foreground: 0 0% 55%;
-    --accent: 43 74% 49%;
+    --accent: 25 100% 63%;
     --accent-foreground: 0 0% 100%;
     --border: 0 0% 14%;
     --input: 0 0% 14%;
-    --ring: 43 74% 49%;
+    --ring: 338 100% 71%;
     --radius: 0.75rem;
   }
 
@@ -36,6 +36,9 @@
 
   ::-webkit-scrollbar { width: 6px; }
   ::-webkit-scrollbar-track { background: hsl(var(--background)); }
-  ::-webkit-scrollbar-thumb { background: #b8952a; border-radius: 3px; }
-  ::selection { background: rgba(184, 149, 42, 0.3); }
+  ::-webkit-scrollbar-thumb { 
+    background: linear-gradient(#FF6B9D, #FF8C42); 
+    border-radius: 3px; 
+  }
+  ::selection { background: rgba(255, 107, 157, 0.3); }
 }

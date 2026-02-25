@@ -13,7 +13,7 @@ export default function NavBar() {
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-2">
             <span className="text-2xl font-black tracking-tight">
-              ANI<span style={{ color: '#FFD700' }}>VERSE</span>
+              GIR<span style={{ color: '#FF6B9D' }}>ON</span>
             </span>
           </Link>
 
@@ -31,7 +31,7 @@ export default function NavBar() {
             <button className="p-2 text-white/70 hover:text-white transition-colors">
               <Bell size={18} />
             </button>
-            <button style={{ backgroundColor: '#FFD700' }} className="flex items-center gap-2 hover:opacity-90 transition-opacity text-black text-sm font-bold px-4 py-2 rounded-full">
+            <button style={{ backgroundColor: '#FF6B9D' }} className="flex items-center gap-2 hover:opacity-90 transition-opacity text-black text-sm font-bold px-4 py-2 rounded-full">
               <User size={16} />
               Sign In
             </button>
@@ -49,7 +49,7 @@ export default function NavBar() {
           <Link href="/anime" className="text-sm text-white/70 hover:text-white" onClick={() => setIsOpen(false)}>Anime</Link>
           <Link href="/community" className="text-sm text-white/70 hover:text-white" onClick={() => setIsOpen(false)}>Community</Link>
           <Link href="/profile" className="text-sm text-white/70 hover:text-white" onClick={() => setIsOpen(false)}>Profile</Link>
-          <button style={{ backgroundColor: '#FFD700' }} className="flex items-center justify-center gap-2 text-black text-sm font-bold px-4 py-2 rounded-full">
+          <button style={{ backgroundColor: '#FF6B9D' }} className="flex items-center justify-center gap-2 text-black text-sm font-bold px-4 py-2 rounded-full">
             <User size={16} />
             Sign In
           </button>

@@ -3,7 +3,7 @@ import "./globals.css";
 import NavBar from "@/components/common/NavBar";
 
 export const metadata: Metadata = {
-  title: "AniVerse — Anime Community",
+  title: "Giron — Anime Community",
   description: "The ultimate anime community platform",
 };
 
