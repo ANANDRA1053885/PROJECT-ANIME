@@ -68,11 +68,19 @@ export default function JujutsuKaisenPage() {
             <section>
               <h2 className="text-xl font-black text-white mb-4">Synopsis</h2>
               <p className="text-white/60 leading-relaxed">
-                Yuji Itadori is a boy with tremendous physical strength. One day he swallows a cursed object —
-                the finger of the demon Ryomen Sukuna — and becomes Sukuna's host. He is welcomed into the
-                Tokyo Metropolitan Jujutsu Technical High School to exorcise demons and consume the remaining
-                fingers of Sukuna, before being executed. A dark fantasy story of curses, sorcerers, and the
-                thin line between life and death.
+                <p className="text-white/60 leading-relaxed">
+                  Yuji Itadori is an ordinary high schooler with extraordinary physical ability.
+                  His normal life is shattered when he encounters a cursed object — a rotting finger
+                  belonging to Ryomen Sukuna, the undisputed King of Curses and the most powerful
+                  sorcerer in all of history. After swallowing it to protect his friends, Yuji becomes
+                  Sukuna's vessel — but after watching his ability to contain and supress Sukuna's soul
+                  within him Megumi's mentor Satoru Gojo — the most powerful jujutsu
+                  socerer of the modern era personally brings Yuji into the Tokyo Jujutsu Technical
+                  High School rather than allowing him to be executed. There, Yuji is tasked with hunting
+                  down and consuming Sukuna's remaining fingers, absorbing the King of Curses piece by piece
+                  — all while walking a razor's edge between his own humanity and the monster living inside him.
+                  A brutal, emotional journey through a world where cursed energy shapes life and death.
+                </p>
               </p>
             </section>
 

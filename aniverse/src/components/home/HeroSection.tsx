@@ -6,20 +6,25 @@ import Link from "next/link";
 export default function HeroSection() {
   return (
     <section className="relative min-h-[90vh] flex items-center overflow-hidden">
-      <div className="absolute inset-0" style={{ background: 'linear-gradient(135deg, rgba(255,107,157,0.08) 0%, black 50%, black 100%)' }} />
-      <div className="absolute top-20 right-20 w-96 h-96 rounded-full blur-3xl animate-pulse" style={{ backgroundColor: 'rgba(255,107,157,0.07)' }} />
-      <div className="absolute bottom-20 left-20 w-64 h-64 rounded-full blur-3xl animate-pulse" style={{ backgroundColor: 'rgba(255,140,66,0.05)', animationDelay: '1s' }} />
 
-      <div className="absolute inset-0 opacity-5"
-        style={{
-          backgroundImage: `linear-gradient(rgba(255,107,157,0.3) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(255,107,157,0.3) 1px, transparent 1px)`,
-          backgroundSize: "50px 50px"
-        }}
-      />
+      {/* Hero Background Image */}
+      <div className="absolute inset-0">
+        <img
+          src="/hero-bg.png"
+          alt="Hero Background"
+          className="w-full h-full object-cover object-center"
+        />
+        {/* Dark overlay so text is readable */}
+        <div className="absolute inset-0" style={{
+          background: 'linear-gradient(90deg, rgba(0,0,0,0.85) 40%, rgba(0,0,0,0.3) 100%)'
+        }} />
+        {/* Bottom fade */}
+        <div className="absolute bottom-0 left-0 right-0 h-32"
+          style={{ background: 'linear-gradient(to bottom, transparent, #0a0a0a)' }} />
+      </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="max-w-3xl">
+        <div className="max-w-2xl">
 
           {/* Badge */}
           <motion.div
@@ -55,7 +60,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-lg text-white/60 mb-10 max-w-xl leading-relaxed"
+            className="text-lg text-white/70 mb-10 max-w-xl leading-relaxed"
           >
             Discover, discuss, and dive deep into the world of anime.
             Join millions of fans tracking their favorites, sharing reviews,
@@ -69,7 +74,7 @@ export default function HeroSection() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="flex flex-wrap gap-4"
           >
-            <Link href="/anime"
+            <Link href="/anime/jujutsu-kaisen"
               className="font-semibold px-8 py-4 rounded-full transition-all duration-200 hover:scale-105 hover:opacity-90 text-white"
               style={{ background: 'linear-gradient(135deg, #FF6B9D, #FF8C42)' }}
             >
@@ -106,7 +111,6 @@ export default function HeroSection() {
               </div>
             ))}
           </motion.div>
-
         </div>
       </div>
     </section>
